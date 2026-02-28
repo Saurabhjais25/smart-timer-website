@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Timer</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>⏳ Smart Timer</h1>
+
+    <div class="top-bar">
+        <button onclick="setMode('countdown')">Countdown</button>
+        <button onclick="setMode('pomodoro')">Pomodoro</button>
+        <button onclick="toggleDarkMode()">🌙 Dark</button>
+    </div>
+
+    <div id="display">00:25:00</div>
+
+    <div id="countdownInput">
+        <input type="number" id="minutes" placeholder="Minutes">
+    </div>
+
+    <div class="controls">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+    </div>
+</div>
+
+<audio id="alarm" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"></audio>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
